@@ -27,3 +27,4 @@ github_username:  mkt120
 # Build settings
 theme: jekyll-theme-architect
 
+paginate: 5
