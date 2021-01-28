@@ -2,6 +2,6 @@
 layout: default
 ---
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date: "%Y年%m月%d日%k時%M分" }}</p>
+<p class="meta">{{ page.date | date: site.japanese_date_format }}</p>
 
 {{ content }}
