@@ -53,7 +53,14 @@
               .tar.gz file
             </a>
           {% endif %}
-          <img src="{{ site.github.owner_gravatar_url }}" class="owner_gravatar"/>
+
+          <div id="user_info">
+            <p>自己紹介</p>
+            <img src="{{ site.github.owner_gravatar_url }}" class="owner_gravatar"/>
+            <p>名前：</br>{{ site.user_info_name }}</p>
+            <p>説明：</br>{{ site.user_info_description_short }}</p>
+            <p>Twitter:</br><a href="https://www.twitter.com/mkt120">@mkt120</a></p>
+          </div>
 
           <!-- gitHubで生成してますよリンク -->
           {% if site.github.is_project_page %}
