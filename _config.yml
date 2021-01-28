@@ -29,6 +29,7 @@ user_info_description_short: >-
 # Build settings
 theme: jekyll-theme-architect
 
+timezone: Asia/Tokyo
 japanese_date_format: "%Y年%m月%d日%k時%M分"
 
 paginate: 5
