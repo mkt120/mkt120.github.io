@@ -30,6 +30,6 @@ user_info_description_short: >-
 theme: jekyll-theme-architect
 
 timezone: Asia/Tokyo
-japanese_date_format: "%Y年%m月%d日%k時%M分"
+japanese_date_format: "%Y年%m月%d日%k:%M"
 
 paginate: 5
