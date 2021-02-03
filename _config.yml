@@ -27,7 +27,7 @@ user_info_description_short: >-
 
 
 # Build settings
-theme: jekyll-theme-architect
+theme: jekyll-theme-hacker
 
 timezone: Asia/Tokyo
 japanese_date_format: "%Y年%m月%d日%k:%M"
