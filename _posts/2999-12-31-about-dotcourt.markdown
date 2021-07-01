@@ -37,8 +37,8 @@ categories: jekyll update
 
 ### Twitter
 
-- 技術関連:[twittermkt120][@mkt120]
-- 趣味:[twitterdokkoto120][@dokkoto120]
+技術関連:[twittermkt120][@mkt120]
+趣味:[twitterdokkoto120][@dokkoto120]
 
 [twittermkt120]: https://twitter.com/mkt120
 [twitterdokkoto120]: https://twitter.com/dokkoto120
