@@ -10,6 +10,8 @@ categories: jekyll update
 どうも。どっこと(dot-court)です。  
 コーディングしたり、ゲームしたり、ブログ書いたりしています。
 
+---
+
 ## 興味
 
 ### 技術関連
@@ -38,6 +40,8 @@ categories: jekyll update
 
 - Youtuber
 
+---
+
 ## 公開したアプリ
 
 ### SimpleBookmark
@@ -49,6 +53,8 @@ Androidのスマートフォンを使っているユーザは、GoogleChromeの�
 このアプリは「共有ボタン」をタップするだけでブックマークを追加することでき、ラベルやタグを使って簡単、シンプルにブックマークを整理することができます。  
 
 [SimpleBookmark]: https://play.google.com/store/apps/details?id=com.mkt120.simplebookmark
+
+---
 
 ## SNS
 
