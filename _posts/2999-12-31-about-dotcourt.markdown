@@ -76,7 +76,8 @@ Androidのスマートフォンを使っているユーザは、GoogleChromeの�
 
 ### AtCorder
 
-- [mkt120]:[atcorder_mkt120]
+- [mkt120][atcorder_mkt120]
+
 [atcorder_mkt120]: https://atcoder.jp/users/mkt120
 
 ### BGA(BoardGameArena)
