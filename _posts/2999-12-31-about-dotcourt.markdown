@@ -50,12 +50,17 @@ categories: jekyll update
 
 [twitter_dokkoto120]: https://twitter.com/dokkoto120
 
-
 ### Qiita
 
 - [@mkt120][qiitamkt120]
 
 [qiitamkt120]: https://qiita.com/mkt120
+
+### BGA(BoardGameArena)
+
+- [dotcourt][bgadotcourt]
+
+[bgadotcourt]: https://boardgamearena.com/player?id=87961759
 
 ## 公開したアプリ
 
