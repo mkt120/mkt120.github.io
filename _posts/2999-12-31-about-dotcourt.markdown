@@ -1,15 +1,62 @@
 ---
 layout: post
-title:  "dot-courtについて"
-date: 2999-12-31 12:23:34 +900
+title:  "This is about dot-court."
+date: 2999-12-31 23:59:59 +900
 categories: jekyll update
 ---
 
-公開したアプリ
+### 挨拶
+
+どうも。どっこと(dot-court)です。
+コーディングしたり、ゲームしたり、ブログ書いたりしています。
+
+### 興味
+
+#### 技術関連
+
+- モバイル
+  - Android
+  - iOS
+
+- マルチプラットフォーム
+  - React native
+  - Flutter
+
+- and
+  - Webサービス 
+  - CI/CD
+  - 効率化/自動化
+
+#### その他
+
+- ボードゲーム
+
+- Youtuber
+
+### SNS
+
+#### Twitter
+
+- 技術関連:[twitter_mkt120][@mkt120]
+- 趣味:[twitter_dokkoto120][@dokkoto120]
+
+#### Qiita
+
+- [qiita_mkt120][@mkt120]
+
+
+### 公開したアプリ
+
+#### SimpleBookmark
 
 [SimpleBookmark][SimpleBookmark]
 
+ブックマークを簡単に整理できるブックマークアプリです。  
+Androidのスマートフォンを使っているユーザは、GoogleChromeのブックマークが整理しにくいという煩わしさと感じる時があると思います。  
+このアプリは「共有ボタン」をタップするだけでブックマークを追加することでき、ラベルやタグを使って簡単、シンプルにブックマークを整理することができます。  
+
+
 [SimpleBookmark]: https://play.google.com/store/apps/details?id=com.mkt120.simplebookmark
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[twitter_mkt120]: https://twitter.com/mkt120
+[twitter_dokkoto120]: https://twitter.com/dokkoto120
+[qiita_mkt120]: https://qiita.com/mkt120
