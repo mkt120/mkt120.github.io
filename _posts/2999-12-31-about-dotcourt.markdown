@@ -40,10 +40,14 @@ categories: jekyll update
 - 技術関連:[twitter_mkt120][@mkt120]
 - 趣味:[twitter_dokkoto120][@dokkoto120]
 
+[twitter_mkt120]: https://twitter.com/mkt120
+[twitter_dokkoto120]: https://twitter.com/dokkoto120
+
 ### Qiita
 
 - [qiita_mkt120][@mkt120]
 
+[qiita_mkt120]: https://qiita.com/mkt120
 
 ## 公開したアプリ
 
@@ -55,8 +59,4 @@ categories: jekyll update
 Androidのスマートフォンを使っているユーザは、GoogleChromeのブックマークが整理しにくいという煩わしさと感じる時があると思います。  
 このアプリは「共有ボタン」をタップするだけでブックマークを追加することでき、ラベルやタグを使って簡単、シンプルにブックマークを整理することができます。  
 
-
 [SimpleBookmark]: https://play.google.com/store/apps/details?id=com.mkt120.simplebookmark
-[twitter_mkt120]: https://twitter.com/mkt120
-[twitter_dokkoto120]: https://twitter.com/dokkoto120
-[qiita_mkt120]: https://qiita.com/mkt120
