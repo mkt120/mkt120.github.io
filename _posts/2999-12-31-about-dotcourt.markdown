@@ -5,14 +5,14 @@ date: 2999-12-31 23:59:59 +900
 categories: jekyll update
 ---
 
-### 挨拶
+## 挨拶
 
 どうも。どっこと(dot-court)です。
 コーディングしたり、ゲームしたり、ブログ書いたりしています。
 
-### 興味
+## 興味
 
-#### 技術関連
+### 技術関連
 
 - モバイル
   - Android
@@ -27,27 +27,27 @@ categories: jekyll update
   - CI/CD
   - 効率化/自動化
 
-#### その他
+### その他
 
 - ボードゲーム
 
 - Youtuber
 
-### SNS
+## SNS
 
-#### Twitter
+### Twitter
 
 - 技術関連:[twitter_mkt120][@mkt120]
 - 趣味:[twitter_dokkoto120][@dokkoto120]
 
-#### Qiita
+### Qiita
 
 - [qiita_mkt120][@mkt120]
 
 
-### 公開したアプリ
+## 公開したアプリ
 
-#### SimpleBookmark
+### SimpleBookmark
 
 [SimpleBookmark][SimpleBookmark]
 
