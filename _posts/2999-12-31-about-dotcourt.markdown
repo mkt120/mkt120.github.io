@@ -31,8 +31,8 @@ categories: jekyll update
 
 ### その他
 
-- AtCoder
-  - アカウント作っただけ状態
+- 競技プログラミング
+  - AtCoder アカウント作っただけ状態
 
 - ボードゲーム
   - BGA(BoardGameArena)
