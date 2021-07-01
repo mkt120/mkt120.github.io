@@ -58,6 +58,18 @@ Androidのスマートフォンを使っているユーザは、GoogleChromeの�
 
 ## SNS
 
+### Blog
+
+- [戯言とエソラ][blog_tech]
+  - 技術ブログ
+
+- [チラシの裏とかノートとか][blog_boardgame]
+  - ボードゲームのブログ 
+
+[blog_boardgame]: https://mkt120.hatenablog.jp/
+[blog_tech]: https://dot-court.blogspot.com/
+
+
 ### Twitter
 
 - 技術関連: [@mkt120][twitter_mkt120] 
