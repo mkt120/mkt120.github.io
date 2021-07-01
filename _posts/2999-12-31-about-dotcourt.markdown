@@ -38,6 +38,18 @@ categories: jekyll update
 
 - Youtuber
 
+## 公開したアプリ
+
+### SimpleBookmark
+
+[SimpleBookmark][SimpleBookmark]
+
+ブックマークを簡単に整理できるブックマークアプリです。  
+Androidのスマートフォンを使っているユーザは、GoogleChromeのブックマークが整理しにくいという煩わしさと感じる時があると思います。  
+このアプリは「共有ボタン」をタップするだけでブックマークを追加することでき、ラベルやタグを使って簡単、シンプルにブックマークを整理することができます。  
+
+[SimpleBookmark]: https://play.google.com/store/apps/details?id=com.mkt120.simplebookmark
+
 ## SNS
 
 ### Twitter
@@ -61,15 +73,3 @@ categories: jekyll update
 - [dotcourt][bgadotcourt]
 
 [bgadotcourt]: https://boardgamearena.com/player?id=87961759
-
-## 公開したアプリ
-
-### SimpleBookmark
-
-[SimpleBookmark][SimpleBookmark]
-
-ブックマークを簡単に整理できるブックマークアプリです。  
-Androidのスマートフォンを使っているユーザは、GoogleChromeのブックマークが整理しにくいという煩わしさと感じる時があると思います。  
-このアプリは「共有ボタン」をタップするだけでブックマークを追加することでき、ラベルやタグを使って簡単、シンプルにブックマークを整理することができます。  
-
-[SimpleBookmark]: https://play.google.com/store/apps/details?id=com.mkt120.simplebookmark
