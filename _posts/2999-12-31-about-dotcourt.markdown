@@ -37,17 +37,17 @@ categories: jekyll update
 
 ### Twitter
 
-- 技術関連:[twitter_mkt120][@mkt120]
-- 趣味:[twitter_dokkoto120][@dokkoto120]
+- 技術関連:[twittermkt120][@mkt120]
+- 趣味:[twitterdokkoto120][@dokkoto120]
 
-[twitter_mkt120]: https://twitter.com/mkt120
-[twitter_dokkoto120]: https://twitter.com/dokkoto120
+[twittermkt120]: https://twitter.com/mkt120
+[twitterdokkoto120]: https://twitter.com/dokkoto120
 
 ### Qiita
 
-- [qiita_mkt120][@mkt120]
+- [qiitamkt120][@mkt120]
 
-[qiita_mkt120]: https://qiita.com/mkt120
+[qiitamkt120]: https://qiita.com/mkt120
 
 ## 公開したアプリ
 
