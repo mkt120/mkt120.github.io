@@ -7,7 +7,7 @@ categories: jekyll update
 
 ## 挨拶
 
-どうも。どっこと(dot-court)です。
+どうも。どっこと(dot-court)です。  
 コーディングしたり、ゲームしたり、ブログ書いたりしています。
 
 ## 興味
