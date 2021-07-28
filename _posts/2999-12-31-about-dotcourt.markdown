@@ -31,9 +31,6 @@ categories: jekyll update
 - Webサービス 
 - CI/CD
 - 効率化/自動化
-
-### その他
-
 - 競技プログラミング
   - AtCoder アカウント作っただけ状態
 
@@ -80,3 +77,11 @@ Androidのスマートフォンを使っているユーザは、GoogleChromeの�
 - [mkt120][atcorder_mkt120]
 
 [atcorder_mkt120]: https://atcoder.jp/users/mkt120
+
+---
+
+## その他
+
+エンジニア以外については[こちら][dokkoto_boardgame]
+
+[dokkoto_boardgame]: https://sites.google.com/view/dotcourt/
