@@ -16,29 +16,26 @@ categories: jekyll update
 
 ### 技術関連
 
-- モバイル
-  - Android
-  - iOS
+#### モバイル
 
-- マルチプラットフォーム
-  - React native
-  - Flutter
+- Android
+- iOS
 
-- and
-  - Webサービス 
-  - CI/CD
-  - 効率化/自動化
+#### マルチプラットフォーム
+
+- React native
+- Flutter
+
+#### others
+
+- Webサービス 
+- CI/CD
+- 効率化/自動化
 
 ### その他
 
 - 競技プログラミング
   - AtCoder アカウント作っただけ状態
-
-- ボードゲーム
-  - BGA(BoardGameArena)
-    - アカウント作っただけ状態
-
-- Youtuber
 
 ---
 
@@ -63,10 +60,6 @@ Androidのスマートフォンを使っているユーザは、GoogleChromeの�
 - [戯言とエソラ][blog_tech]
   - 技術ブログ
 
-- [チラシの裏とかノートとか][blog_boardgame]
-  - ボードゲームのブログ 
-
-[blog_boardgame]: https://mkt120.hatenablog.jp/
 [blog_tech]: https://dot-court.blogspot.com/
 
 
@@ -74,11 +67,7 @@ Androidのスマートフォンを使っているユーザは、GoogleChromeの�
 
 - 技術関連: [@mkt120][twitter_mkt120] 
 
-- 趣味: [@dokkoto120][twitter_dokkoto120] 
-
 [twitter_mkt120]: https://twitter.com/mkt120
-
-[twitter_dokkoto120]: https://twitter.com/dokkoto120
 
 ### Qiita
 
@@ -91,9 +80,3 @@ Androidのスマートフォンを使っているユーザは、GoogleChromeの�
 - [mkt120][atcorder_mkt120]
 
 [atcorder_mkt120]: https://atcoder.jp/users/mkt120
-
-### BGA(BoardGameArena)
-
-- [dotcourt][bgadotcourt]
-
-[bgadotcourt]: https://boardgamearena.com/player?id=87961759
