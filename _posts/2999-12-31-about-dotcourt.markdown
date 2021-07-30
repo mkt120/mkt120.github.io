@@ -62,7 +62,7 @@ Androidのスマートフォンを使っているユーザは、GoogleChromeの�
 
 ### Twitter
 
-- 技術関連: [@mkt120][twitter_mkt120] 
+-  [@mkt120][twitter_mkt120] 
 
 [twitter_mkt120]: https://twitter.com/mkt120
 
