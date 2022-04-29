@@ -14,15 +14,15 @@ const RESOURCES = {
 "assets/NOTICES": "0dc5f7cb3e3d7cf4dc0e7a77fe64a3c4",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
-"main.dart.js": "a59cee0ad57d82c442c3806d5b5cf171",
+"main.dart.js": "a90c04b7c88be57b0f5f27a50500d757",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "flutter.js": "3688efe0a39e59781b4f95efbd6b5b62",
-"index.html": "23aa8838e06cbd88cc578fb74ea2b920",
-"/": "23aa8838e06cbd88cc578fb74ea2b920"
+"index.html": "c8af3a19b0e8f6f6e89f5a976ce0d8b3",
+"/": "c8af3a19b0e8f6f6e89f5a976ce0d8b3"
 };
 
 // The application shell files that are downloaded before a service worker can
