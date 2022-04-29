@@ -32,7 +32,7 @@ jobs:
       run: |
         flutter config --enable-web
         flutter pub get
-        flutter build web
+        flutter build web --web-renderer html
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.8.0
