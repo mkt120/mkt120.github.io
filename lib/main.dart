@@ -225,7 +225,7 @@ class EndDrawer {
   static const urlGithub = "https://github.com/mkt120";
   static const urlQiita = "https://qiita.com/mkt120";
   static const urlAtCoder = "https://atcoder.jp/users/mkt120";
-  static const urlTechNote = "https://sites.google.com/view/sound-of-tech/";
+  static const urlTechNote = "https://dot-court.blogspot.com/";
   static const urlGoogleSite = "https://sites.google.com/view/dotcourt/";
 
   Drawer drawerDefault() {
