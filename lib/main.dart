@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'dotcourt.github.io',
+      title: 'mkt120.github.io',
       theme: ThemeData.dark(),
-      home: const MyHomePage(title: 'dotcourt.github.io'),
+      home: const MyHomePage(title: 'mkt120.github.io'),
     );
   }
 }
@@ -225,8 +225,6 @@ class EndDrawer {
   static const urlGithub = "https://github.com/mkt120";
   static const urlQiita = "https://qiita.com/mkt120";
   static const urlAtCoder = "https://atcoder.jp/users/mkt120";
-  static const urlTechNote = "https://dot-court.blogspot.com/";
-  static const urlGoogleSite = "https://sites.google.com/view/dotcourt/";
 
   Drawer drawerDefault() {
     return Drawer(
@@ -238,7 +236,7 @@ class EndDrawer {
           ),
           const ListTile(
             title: Text("名前"),
-            subtitle: Text("dot-court (どっこと)"),
+            subtitle: Text("mkt120 (どっこと)"),
           ),
           const ListTile(
             title: Text("説明"),
@@ -266,16 +264,6 @@ class EndDrawer {
             title: const Text("AtCoder"),
             subtitle: const Text("@mkt120"),
             onTap: () => {launch(urlAtCoder)},
-          ),
-          ListTile(
-            title: const Text("Tech note"),
-            subtitle: const Text("技術ノート"),
-            onTap: () => {launch(urlTechNote)},
-          ),
-          ListTile(
-            title: const Text("その他"),
-            subtitle: const Text("エンジニア以外についてはこちら"),
-            onTap: () => {launch(urlGoogleSite)},
           ),
         ],
       ),
