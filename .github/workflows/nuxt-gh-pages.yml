@@ -37,6 +37,8 @@ jobs:
   
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     needs: build
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
