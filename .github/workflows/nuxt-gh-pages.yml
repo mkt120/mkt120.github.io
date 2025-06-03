@@ -25,10 +25,13 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
 
-      - run: npm ci
-
-      - name: Build 'npm run build'
+      - name: Install dependencies
+        run: npm i
+      
+      - name: Build
+        run: npm ci
         run: npm run build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -36,12 +39,14 @@ jobs:
           path: './.output'
   
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-    needs: build
+      url: ${{ steps.deployment.outputs.page_url }}
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
