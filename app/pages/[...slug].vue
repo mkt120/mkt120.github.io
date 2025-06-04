@@ -9,7 +9,7 @@ const route = useRoute()
 
 const { data: post } = await useAsyncData("posts-" + route.path, () => {
   return queryCollection('posts')
-    .path(route.path).first()
+  .path(route.path).first()
 })
 const { data: page } = await useAsyncData("pages-" + route.path, () => {
   return queryCollection('pages').path(route.path).first()
@@ -27,7 +27,7 @@ if (!page.value && !post.value) {
       <div v-if="post">
         <h1>{{ post.title }}</h1>
         <p>{{ convertFullDate(post.date) }}</p>
-        <ContentRenderer v-if="post" :value="post" />
+        <ContentRenderer :value="post" />
         <div>
           <span v-for="tag in post.tag" :key="tag" class="post-list-tag-item">#{{ tag }}</span>
         </div>
