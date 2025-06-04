@@ -2,18 +2,9 @@ import { defineContentConfig, defineCollection, z } from '@nuxt/content'
 
 export default defineContentConfig({
   collections: {
-    posts: defineCollection({
+    blog: defineCollection({
       type: "page",
-      source: "posts/**/*.md",
-      schema: z.object({
-        draft: z.boolean(),
-        tag: z.array(z.string()),
-        date: z.string(),
-      }),
-    }),
-    android: defineCollection({
-      type: "page",
-      source: "posts/android/*.md",
+      source: "blog/**/*.md",
       schema: z.object({
         draft: z.boolean(),
         tag: z.array(z.string()),
@@ -21,10 +12,9 @@ export default defineContentConfig({
       }),
     }),
     
-    // 見つからないって怒られる。。。
     pages: defineCollection({
-      type: 'page',
-      source: 'pages/*.md',
+      type: "page",
+      source: "page/**/*.md",
       schema: z.object({
         draft: z.boolean(),
       }),

@@ -10,7 +10,7 @@
                     <li class="sns-list-item">Twitter</li>
                     <li class="sns-list-item">Zenn</li>
                     <li class="sns-list-item">AtCoder</li>
-                    <li class="sns-list-item"><NuxtLink to="/pages/about">about me</NuxtLink></li>
+                    <li class="sns-list-item"><NuxtLink to="/page/about">about me</NuxtLink></li>
                 </ul>
             </div>
         </div>

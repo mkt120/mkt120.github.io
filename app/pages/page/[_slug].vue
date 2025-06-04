@@ -1,58 +1,30 @@
 <script setup lang="ts">
 
-import Header from '~/layout/Header.vue'
-import Footer from '~/layout/Footer.vue'
 import { convertFullDate } from '~/pages/date.js'
 
 // 多分router的なやつで 画面遷移させる処理
 const route = useRoute()
 
-const { data: post } = await useAsyncData("posts-" + route.path, () => {
-  return queryCollection('posts')
-  .path(route.path).first()
-})
-const { data: page } = await useAsyncData("pages-" + route.path, () => {
-  return queryCollection('pages').path(route.path).first()
+const { data: post } = await useAsyncData(route.path, () => {
+  return queryCollection('pages')
+    .path(route.path).first()
 })
 
-if (!page.value && !post.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-}
 </script>
 
 <template>
-  <div class="container">
-    <Header />
     <div class="content">
       <div v-if="post">
         <h1>{{ post.title }}</h1>
-        <p>{{ convertFullDate(post.date) }}</p>
         <ContentRenderer :value="post" />
-        <div>
-          <span v-for="tag in post.tag" :key="tag" class="post-list-tag-item">#{{ tag }}</span>
-        </div>
 
-      </div>
-      <div v-if="page">
-        <ContentRenderer :value="page" />
       </div>
 
     </div>
 
-    <Footer />
-  </div>
 </template>
 
 <style>
-.container {
-  
-  /** 左右中央 */
-  margin-right: auto;
-  margin-left: auto;
-
-  max-width: 750px;
-}
-
 .content {
 
   color: black;
@@ -160,6 +132,7 @@ if (!page.value && !post.value) {
   a {
     text-decoration: none;
   }
+
   a:hover {
     text-decoration: underline;
   }

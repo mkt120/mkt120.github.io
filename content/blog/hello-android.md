@@ -2,8 +2,8 @@
 title: Hello Android
 description: フロントマター説明
 navigation: true
-draft: true
-date: 2025-05-1T00:00:00.000Z
+draft: false
+date: 2025-05-1T00:00:00.000
 tag:
   - android
   - Nuxt

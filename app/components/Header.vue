@@ -10,12 +10,14 @@
             <NuxtLink to="/">TOP</NuxtLink>
           </li>
           <li>Android</li>
-          <li>Droidkaigi</li>
           <li>
-            <NuxtLink to="/pages/about">About</NuxtLink>
+            Droidkaigi
           </li>
           <li>
-            <NuxtLink to="/pages/archieve">Archieve</NuxtLink>
+            <NuxtLink to="/page/about">About</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/page/archieve">Archieve</NuxtLink>
           </li>
         </ul>
       </div>
