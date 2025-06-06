@@ -1,4 +1,8 @@
-# About me
+---
+title: About me
+description: 本サイト管理者、どっこと の自己紹介ページです。
+draft: false
+---
 
 どうも。どっことです。
 
