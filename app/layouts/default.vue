@@ -33,6 +33,10 @@ export default {
 
     color: black;
 
+    .main_container {
+      width: 900px;
+    }
+
     h1 {
       /** position */
       margin-top: 1.6em;
