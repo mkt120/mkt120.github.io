@@ -4,9 +4,6 @@ description: フロントマター説明
 navigation: true
 draft: false
 date: 2025-06-01T00:00:00.000
-tag:
-  - Nuxt
-  - 初心者
 ---
 
 どうも。どっことです。
