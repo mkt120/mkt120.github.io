@@ -2,8 +2,8 @@
   <div class="container">
     <Header />
     <main>
-      <div id="body_container">
-        <NuxtPage id="main_container" />
+      <div class="body_container">
+        <NuxtPage class="main_container" />
       </div>
     </main>
     <Footer />
@@ -29,9 +29,7 @@ export default {
   margin-left: auto;
   max-width: 1000px;
 
-
-
-  .content {
+  .body_container {
 
     color: black;
 
@@ -133,5 +131,6 @@ export default {
       text-decoration: underline;
     }
   }
+
 }
 </style>

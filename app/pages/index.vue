@@ -10,8 +10,8 @@ const { data } = await useAsyncData(() => {
 </script>
 
 <template>
-  <div v-if="data" v-for="item in data" class="list">
-    <h4>{{ item.title }}</h4>
+  <div v-if="data" v-for="item in data">
+    <h1>{{ item.title }}</h1>
     <ul v-if="item.children" v-for="article in item.children">
       <li v-if="article" :key="article.path" class="post-item">
         <!-- 記事一覧の生成 -->
@@ -24,4 +24,5 @@ const { data } = await useAsyncData(() => {
 </template>
 
 <style>
+
 </style>
