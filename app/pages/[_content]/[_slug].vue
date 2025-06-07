@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import { convertFullDate } from '~/pages/date.js'
+import { convertDate } from '~/pages/date.js'
 
 // 多分router的なやつで 画面遷移させる処理
 const route = useRoute()
@@ -16,7 +16,7 @@ const { data: post } = await useAsyncData(route.path, () => {
   <div v-if="post">
     <h1>{{ post.title }}</h1>
     <ContentRenderer :value="post" />
-    <div>最終更新: {{ convertFullDate(post.date) }}</div>
+    <div>最終更新: {{ convertDate(post.date) }}</div>
   </div>
 
 </template>

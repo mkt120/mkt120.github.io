@@ -1,4 +1,4 @@
-export default function convertDate(dateString) {
+export function convertDate(dateString) {
     let date = new Date(dateString);
     return `${date.getFullYear()}.${date.getMonth() + 1}.${date.getDate()}`;
 }
