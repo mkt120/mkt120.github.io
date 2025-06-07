@@ -25,9 +25,6 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
 
-      - name: Install dependencies
-        run: npm i
-      
       - name: Build
         run: npm ci
         # 静的HTMLを生成するためには generate での実行が必要
