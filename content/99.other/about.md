@@ -40,15 +40,17 @@ date: 2025-06-01T07:00:00+09:00
 - iOS
   - Swift
   - SwiftUI
+  - ~Objective-C~
 - Web
-  - Nuxt.js/Typescript
+  - Nuxt.js/node.js
+  - typescript/javascript
 - CI/CD
   - Github Action
   - Jenkins
-- 自動化／効率化
+- 自動化・効率化
   - Python
   - VBA
-  - シェルスクリプト
+  - shellscript
 - 競技プログラミング
   - AtCoder
 
