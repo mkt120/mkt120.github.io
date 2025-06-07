@@ -4,9 +4,6 @@ description: templateページ説明
 navigation: false
 draft: true
 date: 2025-06-02
-tag:
-  - Nuxt
-  - 初心者
 ---
 
 # Welcome to Nuxt Content Starter

@@ -16,10 +16,6 @@ const { data: post } = await useAsyncData(route.path, () => {
   <div v-if="post">
     <h1>{{ post.title }}</h1>
     <ContentRenderer :value="post" />
-    <div>
-      <span v-for="tag in post.tag" :key="tag" class="post-list-tag-item">#{{ tag }}</span>
-    </div>
-
   </div>
 
 </template>
