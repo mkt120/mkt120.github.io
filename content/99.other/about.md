@@ -1,7 +1,9 @@
 ---
 title: About me
 description: 本サイト管理者、どっこと の自己紹介ページです。
+navigation: true
 draft: false
+date: 2025-06-01T07:00:00+09:00
 ---
 
 どうも。どっことです。

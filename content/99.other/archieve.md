@@ -1,7 +1,9 @@
 ---
 title: Archivement／成果物
 description: どっことの制作物の紹介です。
+navigation: true
 draft: false
+date: 2025-06-01T07:00:00+09:00
 ---
 
 
