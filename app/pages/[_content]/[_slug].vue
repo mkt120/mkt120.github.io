@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import { convertDate } from '~/pages/date.js'
+import convertDate  from '~/pages/date.js'
 
 // 多分router的なやつで 画面遷移させる処理
 const route = useRoute()
