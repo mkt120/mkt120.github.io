@@ -39,7 +39,6 @@
   .tab {
     ul {
       margin-top: 24px;
-
       display: flex;
       list-style: none;
       padding-left: 0px;
