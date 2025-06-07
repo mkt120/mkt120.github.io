@@ -16,6 +16,7 @@ const { data: post } = await useAsyncData(route.path, () => {
   <div v-if="post">
     <h1>{{ post.title }}</h1>
     <ContentRenderer :value="post" />
+    <div>最終更新: {{ convertFullDate(post.date) }}</div>
   </div>
 
 </template>
