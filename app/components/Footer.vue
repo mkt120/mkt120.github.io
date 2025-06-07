@@ -6,7 +6,7 @@
                 <p>どうも。どっことです。</p>
                 <p>創りたいものを創りたいように作っています。</p>
                 <ul class="sns-container">
-                    <li class="sns-list-item">Github</li>
+                    <li class="sns-list-item"><a href="https://github.com/mkt120">GitHub</a></li>
                     <li class="sns-list-item">Twitter</li>
                     <li class="sns-list-item">Zenn</li>
                     <li class="sns-list-item">AtCoder</li>
