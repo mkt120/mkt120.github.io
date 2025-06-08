@@ -10,6 +10,19 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
   compatibilityDate: '2024-04-03',
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          theme: 'github-light',
+          langs : [
+            'kt'
+          ]
+        }
+      }
+    }
+  }
+
 })
 
 // 以下が参考になりそう
