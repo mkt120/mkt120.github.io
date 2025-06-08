@@ -102,25 +102,23 @@ export default {
       margin: 0px 4px 0px 4px;
 
       font-size: 16px;
-      line-height: 1.5em;
+      line-height: 1.8em;
     }
 
-    code {
+    p code {
       padding: 4px;
-      background-color: #ccc;
-      border: 1px;
+      background-color: #eee;
       border-radius: 5px;
-      border-color: white;
       font-size: 14px;
       margin-left: 4px;
       margin-right: 4px;
     }
 
     pre {
-      padding: 12px;
-      font-size: 16px;
       line-height: 1.5em;
-      background-color: white;
+      margin-left: 4px;
+      padding: 10px;
+      background-color: #eee;
     }
 
     li {
