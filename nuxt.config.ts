@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   ssr: true,
   modules: [
     '@nuxt/content',
-    '@nuxt/ui'
   ],
   devtools: { enabled: true },
   future: {
