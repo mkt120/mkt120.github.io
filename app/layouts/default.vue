@@ -105,6 +105,24 @@ export default {
       line-height: 1.8em;
     }
 
+    p code {
+      padding: 4px;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-left: 4px;
+      margin-right: 4px;
+
+      background-color: #eee;
+    }
+
+    pre {
+      line-height: 1.5em;
+      margin-left: 4px;
+      padding: 10px;
+
+      background-color: #eee;
+    }
+
     li {
       margin-top: 0.4em;
       margin-bottom: 0.4em;
