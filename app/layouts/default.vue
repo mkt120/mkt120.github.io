@@ -118,7 +118,6 @@ export default {
       line-height: 1.5em;
       margin-left: 4px;
       padding: 10px;
-      background-color: #eee;
     }
 
     li {
