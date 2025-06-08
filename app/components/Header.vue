@@ -44,10 +44,7 @@
       padding-left: 0px;
 
       li {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-right: 28px;
 
         a {
           text-decoration: none;

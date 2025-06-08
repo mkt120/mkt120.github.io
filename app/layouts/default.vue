@@ -93,7 +93,7 @@ export default {
 
     p {
       /** position */
-      margin-left: 12px;
+      margin: 0px 4px 0px 4px;
 
       font-size: 16px;
       line-height: 1.5em;
@@ -115,11 +115,6 @@ export default {
       font-size: 16px;
       line-height: 1.5em;
       background-color: white;
-    }
-
-    div {
-      /** position */
-      margin-left: 12px;
     }
 
     li {
