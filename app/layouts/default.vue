@@ -99,9 +99,9 @@ export default {
       line-height: 1.5em;
     }
 
-    p code {
+    code {
       padding: 4px;
-      background-color: gray;
+      background-color: #ccc;
       border: 1px;
       border-radius: 5px;
       border-color: white;
