@@ -1,12 +1,15 @@
 <template>
-  <div class="container">
-    <Header />
-    <main>
-      <div class="body_container">
-        <NuxtPage class="main_container" />
-      </div>
-    </main>
-    <Footer />
+  <div class="root">
+
+    <div class="container">
+      <Header />
+      <main>
+        <div class="body_container">
+          <NuxtPage class="main_container" />
+        </div>
+      </main>
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -23,6 +26,9 @@ export default {
 </script>
 
 <style>
+.root {
+  size: 100vh;
+}
 .container {
   /** 左右中央 */
   margin-right: auto;
