@@ -7,9 +7,17 @@ date: 2025-06-01T07:00:00+09:00
 ---
 
 どうも。どっことです。
-こちらに引っ越してきました。
 
-# 参考
+`this` page `is` constructing and below is test for syntaxhighlight.
 
-- [引っ越し元](https://mkt120-dev.blogspot.com/)
+
+```kt {3-4}
+// ローカル環境ではハイライトが効かないのだが？ リモートでは...？
+// I don't know why code highlight does not working on local...
+// mmm..., I don't care because it works on remote...?
+private fun sukonbuZ() {
+  System.out.println("どういうことだってばよ")
+}
+```
+
 
