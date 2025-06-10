@@ -8,6 +8,9 @@ date: 2025-06-10T07:00:00+09:00
 
 ## 視聴元
 
+::VideoFrame{ url="https://www.youtube.com/watch?v=dP1beWS2148" }
+::
+
 [僕がテスト書け書けおじさんになった経緯とその過程でやったこと by yuyakaido at DroidKaigi 2016](https://www.youtube.com/watch?v=dP1beWS2148)
 
 ## イントロ
