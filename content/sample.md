@@ -30,3 +30,17 @@ The current [alert](https://github.com/nuxt/starter/blob/content/app/components/
 ::
 
 Checkout out the [documentation](https://content.nuxt.com/docs/getting-started) to learn more.
+
+## Add samples
+
+`this` page `is` constructing and below is test for syntaxhighlight.
+
+_this_ page _is_ constructing and below is test for syntaxhighlight.
+
+**this** page **is** constructing and below is test for syntaxhighlight.
+
+~this~ page ~is~ constructing and below is test for syntaxhighlight.
+
+`code`
+
+`const code: string = 'highlighted code inline'`{lang="ts"}
