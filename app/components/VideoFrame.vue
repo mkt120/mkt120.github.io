@@ -1,7 +1,10 @@
 <template>
-  <iframe :src="source"
-  width="640"
-  height="360"/>
+  <div class="hogehogehoge">
+    <iframe :src="source"
+    width="100%"
+    height="100%"
+    />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -20,3 +23,10 @@ if (url.length > 0) {
 }
 const source = src
 </script>
+
+<style>
+.hogehogehoge {
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+}
+</style>
