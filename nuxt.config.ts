@@ -1,10 +1,13 @@
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
   modules: [
     '@nuxt/content',
+    'nuxt-gtag',
   ],
+  gtag: {
+    id: 'G-676LQFY0NN',
+  },
   devtools: { enabled: true },
   future: {
     compatibilityVersion: 4,
