@@ -1,5 +1,5 @@
 ---
-title: Hello Android
+title: サンプル
 description: フロントマター説明
 navigation: true
 draft: false
@@ -8,29 +8,7 @@ date: 2025-06-01T07:00:00+09:00
 
 どうも。どっことです。
 
-`this` page `is` constructing and below is test for syntaxhighlight.
 
-_this_ page _is_ constructing and below is test for syntaxhighlight.
-
-**this** page **is** constructing and below is test for syntaxhighlight.
-
-~this~ page ~is~ constructing and below is test for syntaxhighlight.
-
-`code`
-
-`const code: string = 'highlighted code inline'`{lang="ts"}
-
-```js [file.js]{2} meta-info=val
-  export default () => {
-    console.log('Code block')
-  }
-```
-
-> blockquote
-
->> blockquote blockquote
-
-> blockquote
 
 ```kt [main.kt] {3-4} meta-info=val
   // ローカル環境ではハイライトが効かないのだが？ リモートでは...？
