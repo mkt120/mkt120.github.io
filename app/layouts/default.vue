@@ -50,6 +50,10 @@ export default {
 
       font-size: 20px;
 
+      border: solid 1px;
+      padding: 10px;
+
+
       a {
         text-decoration: none;
         color: inherit;
