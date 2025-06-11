@@ -1,5 +1,5 @@
 ---
-title: Hello Android
+title: サンプル
 description: フロントマター説明
 navigation: true
 draft: false
