@@ -13,14 +13,19 @@ const { data } = await useAsyncData(() => {
 <template>
   <div v-if="data" v-for="item in data">
     <h1>{{ item.title }}</h1>
-    <ul v-if="item.children" v-for="article in item.children">
-      <li v-if="article" :key="article.path" class="post-item">
-        <!-- 記事一覧の生成 -->
-        <NuxtLink :to="article.path">
-          <div>{{ article.title }}</div>
-        </NuxtLink>
-      </li>
-    </ul>
+    <div v-if="item.children" v-for="article in item.children">
+      <div v-if="article.children">
+        <h3>{{ article.title }}</h3>
+        <ul v-for="a in article.children">
+          <li class="post-item">
+            <!-- 記事一覧の生成 -->
+            <NuxtLink :to="a.path">
+              <div>{{ a.title }}</div>
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
