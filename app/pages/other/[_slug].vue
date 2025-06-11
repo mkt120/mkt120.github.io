@@ -4,7 +4,7 @@ import convertDate  from '~/pages/date.js'
 const route = useRoute()
 
 console.log("route:" + route.path)
-const { data: post } = await useAsyncData(route.path, () => {
+const { data: post } = await useAsyncData(() => {
   return queryCollection('blog')
     .path(route.path).first()
 })
