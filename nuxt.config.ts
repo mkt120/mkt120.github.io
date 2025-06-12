@@ -24,6 +24,16 @@ export default defineNuxtConfig({
         }
       }
     }
+  },
+  app: {
+    head : {
+      meta: [
+        {
+          name: 'google-site-verification',
+          content: 'r5A7m0wE4CUcVDI7oOvIlQK-51z-MRk9WlH0uQas7h8'
+        }
+      ]
+    }
   }
 
 })
