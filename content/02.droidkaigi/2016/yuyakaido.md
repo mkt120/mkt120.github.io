@@ -1,5 +1,5 @@
 ---
-title: 【視聴備忘録】僕がテスト書け書けおじさんになった経緯とその過程でやったこと by yuyakaido at DroidKaigi 2016
+title: 僕がテスト書け書けおじさんになった経緯とその過程でやったこと by yuyakaido at DroidKaigi 2016 を視聴した
 description: Droidkaigiの登壇「僕がテスト書け書けおじさんになった経緯とその過程でやったこと」の視聴備忘録です。
 navigation: true
 draft: false
