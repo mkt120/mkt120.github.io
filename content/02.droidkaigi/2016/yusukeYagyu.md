@@ -1,5 +1,5 @@
 ---
-title: 【視聴備忘録】Android CI 2016 edition by Yusuke Yagyu at DroidKaigi 2016
+title: Android CI 2016 edition by Yusuke Yagyu at DroidKaigi 2016 視聴した
 description: Droidkaigiの登壇「Android CI 2016 edition by Yusuke Yagyu at DroidKaigi 2016」の視聴備忘録です。
 navigation: true
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: 【視聴備忘録】Customizing Theme and Style for Material Design by あんざいゆき（yanzm） at DroidKaigi 2016
+title: Customizing Theme and Style for Material Design by あんざいゆき（yanzm） at DroidKaigi 2016 を視聴した
 description: Droidkaigiの登壇「Customizing Theme and Style for Material Design」の視聴備忘録です。
 navigation: true
 draft: false
