@@ -53,7 +53,6 @@ export default {
       border: solid 1px;
       padding: 10px;
 
-
       a {
         text-decoration: none;
         color: inherit;
@@ -64,8 +63,16 @@ export default {
     h2 {
       /** position */
       margin-top: 1.6em;
+      margin-right: 16px;
 
       font-size: 18px;
+
+      padding-bottom: 4px;
+      padding-left: 10px;
+
+      border-bottom: solid;
+      border-width: 1px;
+      border-color: gray;
 
       a {
         text-decoration: none;
@@ -78,6 +85,7 @@ export default {
     h3 {
       /** position */
       margin-top: 1.2em;
+      margin-left: 10px;
 
       font-size: 16px;
 
@@ -91,6 +99,7 @@ export default {
     h4 {
       /** position */
       margin-top: 0.8em;
+      margin-left: 10px;
 
       font-size: 16px;
 
@@ -103,7 +112,7 @@ export default {
 
     p {
       /** position */
-      margin: 0px 4px 0px 4px;
+      margin: 16px 10px 0px 10px;
 
       font-size: 16px;
       line-height: 1.8em;
