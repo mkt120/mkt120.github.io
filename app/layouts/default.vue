@@ -63,7 +63,6 @@ export default {
     h2 {
       /** position */
       margin-top: 1.6em;
-      margin-right: 16px;
 
       font-size: 18px;
 
@@ -79,7 +78,6 @@ export default {
         color: inherit;
         /* 親要素のテキスト色を継承する */
       }
-
     }
 
     h3 {
@@ -87,7 +85,7 @@ export default {
       margin-top: 1.2em;
       margin-left: 10px;
 
-      font-size: 16px;
+      font-size: 18px;
 
       a {
         text-decoration: none;
@@ -122,15 +120,15 @@ export default {
       padding: 4px;
       border-radius: 5px;
       font-size: 14px;
-      margin-left: 4px;
-      margin-right: 4px;
+      margin-left: 2px;
+      margin-right: 2px;
 
       background-color: #eee;
     }
 
     pre {
       line-height: 1.5em;
-      margin-left: 4px;
+      margin-left: 10px;
       padding: 10px;
 
       background-color: #eee;
