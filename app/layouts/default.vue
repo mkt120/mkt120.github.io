@@ -62,7 +62,7 @@ export default {
 
     h2 {
       /** position */
-      margin-top: 1.6em;
+      margin-top: 2.0em;
 
       font-size: 18px;
 
@@ -82,7 +82,7 @@ export default {
 
     h3 {
       /** position */
-      margin-top: 1.2em;
+      margin-top: 1.8em;
       margin-left: 10px;
 
       font-size: 18px;
@@ -110,7 +110,7 @@ export default {
 
     p {
       /** position */
-      margin: 16px 10px 0px 10px;
+      margin: 1.2em 10px 0px 10px;
 
       font-size: 16px;
       line-height: 1.8em;
