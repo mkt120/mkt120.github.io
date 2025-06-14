@@ -14,7 +14,7 @@ const { data } = await useAsyncData(() => {
     <h1>{{ item.title }}</h1>
     <div v-if="item.children" v-for="article in item.children">
       <div v-if="article.children">
-        <h3>{{ article.title }}</h3>
+        <h2>{{ article.title }}</h2>
         <ul v-for="a in article.children">
           <li class="post-item">
             <!-- 記事一覧の生成 -->
