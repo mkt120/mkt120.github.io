@@ -34,8 +34,14 @@ export default defineNuxtConfig({
         }
       ]
     }
+  },
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        trailingSlash: 'remove',
+      }
+    }
   }
-
 })
 
 // 以下が参考になりそう
