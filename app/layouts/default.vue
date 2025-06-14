@@ -137,6 +137,16 @@ export default {
     li {
       margin-top: 0.4em;
       margin-bottom: 0.4em;
+
+      code {
+        padding: 4px;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-left: 2px;
+        margin-right: 2px;
+    
+        background-color: #eee;
+      }
     }
 
     a {
