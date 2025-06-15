@@ -1,16 +1,13 @@
 <template>
   <header>
     <div class="blog_header">
-      <h2 class="blog-title">どっこと開発備忘録群</h2>
-      <p>アウトプットしないとインプットできない私が Androidアプリ開発をメインとした実装方法の解説や備忘録を載せています。</p>
+      <h1 class="blog-title">どっこと備忘録群</h1>
+      <p>アウトプットしないとインプットできない私が Androidアプリ開発をメインとした備忘録を載せています。</p>
 
       <div class="tab">
         <ul>
           <li>
             <NuxtLink to="/">TOP</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/other/about">About</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/other/archieve">Archieve</NuxtLink>
