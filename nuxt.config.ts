@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     'nuxt-gtag',
+    'nuxt-github-pages'
   ],
   gtag: {
     id: 'G-676LQFY0NN',
