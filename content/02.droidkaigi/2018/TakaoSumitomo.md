@@ -8,7 +8,7 @@ date: 2025-06-16T07:00:00+09:00
 
 ## 視聴元
 
-::VideoFrame{ url="https://www.youtube.com/" }
+::VideoFrame{ url="https://www.youtube.com/watch?v=ibts1McHeFk" }
 ::
 
 - 「良いものを作れば自然とユーザが増える」「面白いものを作ればバイラルで広がる」本当に？

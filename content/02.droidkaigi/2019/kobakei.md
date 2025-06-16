@@ -8,7 +8,7 @@ date: 2025-06-17T07:00:00+09:00
 
 ## 視聴元
 
-::VideoFrame{ url="https://www.youtube.com/" }
+::VideoFrame{ url="https://www.youtube.com/watch?v=xizXK_dWU-E" }
 ::
 
 ## DI
