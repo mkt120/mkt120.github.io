@@ -9,6 +9,9 @@ const { data: post } = await useAsyncData(route.path, () => {
     .path(route.path).first()
 })
 
+useHead({
+  title: post.value?.title + " | どっこと備忘録群"
+})
 </script>
 
 <template>

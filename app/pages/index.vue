@@ -7,6 +7,10 @@ const { data } = await useAsyncData(() => {
   return queryCollectionNavigation("blog", ["draft"])
     .where("draft", "=", false)
 })
+useHead({
+  title: "どっこと備忘録群",  
+})
+
 </script>
 
 <template>

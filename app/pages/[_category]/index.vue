@@ -8,6 +8,11 @@ const { data } = await useAsyncData(() => {
   .where("draft" , "=", false)
   .where("path", "LIKE", route.path + "%")
 })
+
+useHead({
+  title: data.value[0].title + " | どっこと備忘録群",  
+})
+
 </script>
 
 <template>
