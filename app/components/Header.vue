@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="blog_header">
-      <h1 class="blog-title">どっこと備忘録群</h1>
+      <h2 class="blog-title">どっこと備忘録群</h2>
       <p>アウトプットしないとインプットできない私が Androidアプリ開発をメインとした備忘録を載せています。</p>
 
       <div class="tab">
