@@ -28,6 +28,9 @@ export default defineNuxtConfig({
   },
   app: {
     head : {
+      htmlAttrs: {
+        lang: "ja"
+      },
       meta: [
         {
           name: 'google-site-verification',
