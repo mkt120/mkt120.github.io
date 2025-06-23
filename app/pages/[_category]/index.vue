@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { ContentNavigationItem } from '@nuxt/content'
+
 
 const route = useRoute()
 
@@ -10,7 +12,7 @@ const { data } = await useAsyncData(() => {
 })
 
 useHead({
-  title: data.value[0].title + " | どっこと備忘録群",  
+  title: data.value ? data.value[0]?.title + " | どっこと備忘録群" : "どっこと備忘録群",  
 })
 
 </script>
