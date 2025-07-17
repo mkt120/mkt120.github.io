@@ -8,26 +8,20 @@ const { data } = await useAsyncData(() => {
     .where("draft", "=", false)
 })
 useHead({
-  title: "どっこと備忘録群",  
+  title: "どっこと備忘録群",
 })
 
 </script>
 
 <template>
-  <div v-if="data" v-for="item in data">
-    <h1>{{ item.title }}</h1>
-    <div v-if="item.children" v-for="article in item.children">
-      <div v-if="article.children">
-        <h2>{{ article.title }}</h2>
-        <ul v-for="a in article.children">
-          <li class="post-item">
-            <!-- 記事一覧の生成 -->
-            <NuxtLink :to="a.path">
-              <div>{{ a.title }}</div>
-            </NuxtLink>
-          </li>
-        </ul>
-      </div>
+  <div v-if="data" v-for="articles in data">
+    <h1>{{ articles.title }}</h1>
+    <div v-if="articles.children" v-for="article in articles.children">
+      <ul v-if="article.children">
+        <NuxtLink :to="article.path">
+          <li>{{ article.title }}</li>
+        </NuxtLink>
+      </ul>
       <ul v-else>
         <li class="post-item">
           <!-- 記事一覧の生成 -->
