@@ -6,10 +6,10 @@ const route = useRoute()
 
 console.log("route:" + route.path)
 
-const { data } = await useAsyncData(() => {
+const { data } = await useAsyncData(route.path, () => {
   return queryCollectionNavigation("blog", ["draft"])
     .where("draft", "=", false)
-    // .where("path", "LIKE", route.path + "%")
+    .where("path", "LIKE", route.path + "%")
 })
 
 useHead({
