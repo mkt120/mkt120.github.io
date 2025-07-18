@@ -5,10 +5,11 @@ import type { ContentNavigationItem } from '@nuxt/content'
 const route = useRoute()
 
 console.log("route:" + route.path)
+
 const { data } = await useAsyncData(() => {
   return queryCollectionNavigation("blog", ["draft"])
     .where("draft", "=", false)
-    .where("path", "LIKE", route.path + "%")
+    // .where("path", "LIKE", route.path + "%")
 })
 
 useHead({
