@@ -130,7 +130,7 @@ export default {
       line-height: 1.5em;
       margin-left: 10px;
       padding: 10px;
-
+      overflow: auto;
       background-color: #eee;
     }
 
