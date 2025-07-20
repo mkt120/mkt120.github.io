@@ -20,7 +20,8 @@ export default defineNuxtConfig({
         highlight: {
           theme: 'github-light',
           langs : [
-            'kt'
+            'kt',
+            'xml'
           ]
         }
       }
