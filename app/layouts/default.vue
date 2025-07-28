@@ -29,6 +29,7 @@ export default {
 .root {
   size: 100vh;
 }
+
 .container {
   /** 左右中央 */
   margin-right: auto;
@@ -48,7 +49,7 @@ export default {
       margin-top: 1.6em;
       margin-bottom: 12px;
 
-      font-size: 20px;
+      font-size: 24px;
 
       border: solid 1px;
       padding: 10px;
@@ -64,7 +65,7 @@ export default {
       /** position */
       margin-top: 2.0em;
 
-      font-size: 18px;
+      font-size: 20px;
 
       padding-bottom: 4px;
       padding-left: 10px;
@@ -85,7 +86,7 @@ export default {
       margin-top: 1.8em;
       margin-left: 10px;
 
-      font-size: 18px;
+      font-size: 16px;
 
       a {
         text-decoration: none;
@@ -99,7 +100,7 @@ export default {
       margin-top: 0.8em;
       margin-left: 10px;
 
-      font-size: 16px;
+      font-size: 14px;
 
       a {
         text-decoration: none;
@@ -144,18 +145,18 @@ export default {
         font-size: 14px;
         margin-left: 2px;
         margin-right: 2px;
-    
+
         background-color: #eee;
       }
     }
+  }
 
-    a {
-      text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 
-    a:hover {
-      text-decoration: underline;
-    }
+  a:hover {
+    text-decoration: underline;
   }
 
 }
