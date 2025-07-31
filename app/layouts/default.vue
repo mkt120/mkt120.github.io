@@ -111,10 +111,10 @@ export default {
 
     p {
       /** position */
-      margin: 1.2em 10px 0px 10px;
+      margin: 0px 10px 16px 10px;
 
       font-size: 16px;
-      line-height: 1.8em;
+      line-height: 2.0em;
     }
 
     p code {
