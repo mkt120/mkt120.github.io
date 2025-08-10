@@ -159,5 +159,16 @@ export default {
     text-decoration: underline;
   }
 
+  table {
+    /* 水平方向の中央揃え */
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  th {
+    padding: 4px 24px 4px 24px;
+  }
+  td {
+    padding: 4px;
+  }
 }
 </style>
