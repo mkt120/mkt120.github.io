@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     'nuxt-gtag',
     'nuxt-github-pages'
   ],
+
   gtag: {
     id: 'G-676LQFY0NN',
   },
@@ -23,7 +24,7 @@ export default defineNuxtConfig({
             'kt',
             'xml'
           ]
-        }
+        }        
       }
     }
   },
