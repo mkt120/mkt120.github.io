@@ -1,0 +1,51 @@
+---
+title: Applicationクラスを追加する
+description: Applicationクラスに関する実装について紹介・開設する
+navigation: true
+draft: false
+date: 2025-09-08T07:00:00+09:00
+---
+
+
+## Application クラスを追加したい
+
+
+### その前に Applicationクラスとは
+
+**Application クラス**は、アプリが起動する際に一番最初に動作するクラスで、このクラスにアプリ全体の初期設定や各種処理を記述する。たとえば外部ライブラリの初期化処理は、このクラスの`onCreate`メソッド内に実装することが多い。
+
+### Application クラスの実装手順
+
+1.  `Application`クラスを継承した**CustomApplication**クラスを追加する
+2.  `AndroidManifest.xml`に**CustomApplication**クラスを登録する
+
+#### 1\. Application クラスを継承した CustomApplication クラスを追加する
+
+`Application`クラスを継承した**CustomApplication**クラスを作成する。
+クラス名に制約はないので、分かりやすい名前を付ける。
+
+```kotlin
+class CustomApplication : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        // ここにライブラリの初期化やテーマの設定など、アプリ全体の初期設定を記述する
+    }
+}
+```
+
+-----
+
+#### 2\. AndroidManifest.xml に CustomApplication クラスを登録する
+
+次に、前の手順で作成した**CustomApplication**を`AndroidManifest.xml`に登録する。
+
+`application`タグに`android:name`属性を追加し、作成したクラス名を指定する。
+
+```xml
+<application
+    ....
+    android:name=".CustomApplication">
+    </application>
+```
+
+これでビルドしてアプリを起動すると、`CustomApplication#onCreate()`が最初に呼ばれるようになる。
