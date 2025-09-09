@@ -60,13 +60,13 @@ date: 2025-09-08T07:00:00+09:00
 </code></pre>
 ```
 
-この設定で一度動作を確認してみましょう。
+ここまでの設定で一度表示を確認し、シンタックスハイライトが機能しているか確認する。
 
 ### スタイルを変更する
 
 `highlight.js`では、CSSファイルを変えるだけで簡単にコードのスタイル（テーマ）を変更できる。
 
-`default.min.css`の部分を変更します。
+`default.min.css`の部分を変更する。
 
 ```
 default.min.css
@@ -79,7 +79,7 @@ default.min.css
 dracula.min.css
 ```
 
-※`dracula.css`ではなく、`.min.css`を使う必要があります。
+※`dracula.css`ではなく、`.min.css`を指定する必要がある。
 
 ### 参考
 
