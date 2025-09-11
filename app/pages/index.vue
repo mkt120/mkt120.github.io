@@ -40,11 +40,16 @@ useHead({
   </div>
   <div v-if="droidkaigi">
     <h1>Droidkaigi</h1>
-    <ul v-if="droidkaigi.children" v-for="article in droidkaigi.children">
-      <NuxtLink :to="article.path">
-        <li>{{ article.title }}</li>
+    <div v-if="droidkaigi.children" v-for="year in droidkaigi.children">
+      <NuxtLink :to="year.path">
+        <h2>{{ year.title }}</h2>
       </NuxtLink>
-    </ul>
+      <ul v-if="year.children" v-for="article in year.children">
+        <NuxtLink :to="article.path">
+          <li>{{ article.title }}</li>
+        </NuxtLink>
+      </ul>
+    </div>
   </div>
   <div v-if="nisa">
     <h1>NISA</h1>
