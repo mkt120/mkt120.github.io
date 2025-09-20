@@ -9,7 +9,7 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@nuxt/content": "^3.5.1",
+    "@nuxt/content": "^3.7.1",
     "@nuxtjs/sitemap": "^7.4.7",
     "nuxt": "^3.19.0",
     "nuxt-github-pages": "^1.5.0",
