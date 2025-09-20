@@ -4,9 +4,9 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     'nuxt-gtag',
-    'nuxt-github-pages'
+    'nuxt-github-pages',
+    '@nuxtjs/sitemap'
   ],
-
   gtag: {
     id: 'G-676LQFY0NN',
   },
@@ -20,16 +20,16 @@ export default defineNuxtConfig({
       markdown: {
         highlight: {
           theme: 'github-light',
-          langs : [
+          langs: [
             'kt',
             'xml'
           ]
-        }        
+        }
       }
     }
   },
   app: {
-    head : {
+    head: {
       htmlAttrs: {
         lang: "ja"
       },
@@ -40,8 +40,11 @@ export default defineNuxtConfig({
         }
       ]
     }
-  }
-
+  },
+  site: {
+    url: 'https://mkt120.github.io',
+    name: 'どっこと備忘録群'
+  },
 })
 
 // 以下が参考になりそう
