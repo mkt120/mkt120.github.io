@@ -36,11 +36,17 @@ useHead({
     <h1>
       <NuxtLink :to="android.path">Android</NuxtLink>
     </h1>
-    <ul v-if="android.children" v-for="article in android.children">
-      <NuxtLink :to="article.path">
-        <li>{{ article.title }}</li>
+    <div v-if="android.children" v-for="category in android.children">
+      <NuxtLink :to="category.path">
+        <h2>{{ category.title }}</h2>
       </NuxtLink>
-    </ul>
+      <ul v-if="category.children" v-for="article in category.children">
+        <NuxtLink :to="article.path">
+          <li>{{ article.title }}</li>
+        </NuxtLink>
+      </ul>
+    </div>
+
   </div>
 
   <!-- droidkaigi -->
