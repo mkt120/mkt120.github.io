@@ -1,0 +1,171 @@
+---
+title: Kotlin Coroutineの使い方
+description: Kotlin Coroutineの使い方について解説します。
+navigation: true
+draft: false
+date: 2026-06-11T07:00:00+09:00
+---
+
+## Kotlin Coroutine
+
+`Kotlin Coroutine`は非同期処理などのコールバック地獄を解消してくれたり、
+可読性の高いコードを実装できるようになる便利な機能です。
+
+## TL;DR（結論）
+
+`ViewModel`では`viewModelScope.launch`を、
+`View`では`lifecycleScope.launch`を使うのが良さそう。
+
+Google開発者サイトでコルーチンに関するベストプラクティスが紹介されています。
+コルーチンにフォーカスしたものだと、以下が挙げられています。
+
+1. `Dispatcher`を外から注入できるようにする
+2. `ViewModel`でコルーチンを作成する
+3. `GlobalScope`は使わない
+4. コルーチンをキャンセルできるようにする
+
+### Dispatcherを外から注入できるようにする
+
+`withContext`などで引数に設定するDispatcher（どのスレッドで処理するかの指定）は、
+ハードコードせず外から注入できる形にする。テストコードを実装するときにテストが容易に実装可能。
+
+```kotlin
+// OK:処理するDispatcherを外から指定する
+class SampleRepository(private val ioDispatcher: CoroutineDispatcher =  Dispatchers.IO) {
+    suspend fun veryHeavyTask() = withContext(ioDispatcher) {
+        // very heavy task
+    }
+}
+
+```
+
+```kotlin
+class SampleRepository() {
+    // NG: Dispatcherをハードコード（直接指定）しない
+    suspend fun veryHeavyTask() = withContext(Dispatchers.IO) {
+        // very heavy task
+    }
+}
+
+```
+
+### ViewModelでコルーチンを作成する
+
+`ViewModel`を作成し、コルーチンを作成→非同期処理を実装するのが良い。
+
+そして画面側に非同期処理が必要なことを意識させることがないよう、
+suspend関数として公開しないよう実装する。
+
+```kotlin
+class SampleViewModel(): ViewModel() {
+    private val repository = SomeRepository()
+
+    // NG:UI側にsuspend関数（=非同期処理）として公開しない
+    suspend fun badSample() = repository.veryHeavyTask()
+
+    // OK:ViewModel内でコルーチンを生成し非同期処理を実行する
+    fun sample() {
+        viewModelScope.launch {
+            repository.veryHeavyTask()
+        }
+    }
+}
+
+```
+
+### GlobalScopeを使わない
+
+`GlobalScope`をハードコードしていることにより`Dispatcher`もハードコードされやすくなる点などから、
+`GlobalScope`を利用しないことが推奨されている。
+
+```kotlin
+class SampleRepository() {
+    fun veryHeavyTask() {
+        // NG：GlobalScopeをハードコードしない
+        GlobalScope.launch {
+            // very heavy task
+        }
+    }
+}
+
+```
+
+### コルーチンをキャンセル可能にする
+
+コルーチンの呼び出しはキャンセル可能。
+ただし、実際コルーチン内でキャンセルされたかの確認とそれに伴い処理を終了させることは自前で実装が必要。
+`ensureActive`を使用することでキャンセルの確認ができます。
+
+```kotlin
+class SampleViewModel(): ViewModel() {
+    private val repository = SampleRepository()
+
+    fun sample(value: Int) {
+        viewModelScope.launch { 
+            val result = repository.validateValue(value)
+            // キャンセルできるタイミングでアクティブか確認
+            ensureActive()
+            if (result) {
+                repository.submit(value)
+            }
+        }
+    }
+}
+
+```
+
+## Kotlin Coroutineを並行に実行する
+
+Kotlin Coroutineは非同期処理を簡潔に記述できるだけでなく、
+複数の処理を同時に実行する並行処理にも対応しています。
+API通信やデータベースへのデータ永続化といった時間のかかる処理を同時に実行することで、
+全体の処理時間を短縮することが可能です。
+
+
+### 実装方法
+
+並行処理を実装する場合、主に以下の2つのパターンがあります。
+
+#### 1. async / awaitAll による実装
+
+1つ目は、`async` と `awaitAll` を使用して実装する方法です。
+
+```kotlin
+viewModelScope.launch {
+    val apiList = listOf(
+        // async でコルーチンを生成し、その中でAPIを実行する
+        async { api1() },
+        async { api2() },
+        async { api3() },
+    )
+    // すべてのコルーチンを並行実行し、すべての完了を待つ
+    apiList.awaitAll()
+}
+
+```
+
+#### 2. launch / joinAll による実装
+
+2つ目は、`launch` と `joinAll` を使用して実装する方法です。
+
+```kotlin
+viewModelScope.launch {
+    // launch でコルーチンを作成し、その中でAPIを実行する
+    val apiJobsList = listOf(
+        launch { api1() },
+        launch { api2() },
+        launch { api3() },
+    )
+    // すべてのコルーチンを並行実行し、すべての完了を待つ
+    apiJobsList.joinAll()
+}
+
+```
+
+### 参考
+
+* [Android での Kotlin コルーチン  |  Android Developers](https://developer.android.com/kotlin/coroutines?hl=ja)
+* [Android でのコルーチンに関するベスト プラクティス  |  Kotlin  |  Android Developers](https://developer.android.com/kotlin/coroutines/coroutines-best-practices?hl=ja)
+* [Kotlin コルーチン 1.5: GlobalScope がデリケート扱いに、チャンネル API の改善など | The Kotlin Blog](https://blog.jetbrains.com/ja/kotlin/2021/06/kotlin-coroutines-1-5-0-released-ja/)
+* [コルーチンの基本的な使い方（並行処理/並列処理）](https://zenn.dev/kotaro666/articles/how-to-use-kotlin-coroutine#3.-%E4%B8%A6%E5%88%97%E5%87%A6%E7%90%86%EF%BC%88launch%2Fjoin%EF%BC%89)
+
