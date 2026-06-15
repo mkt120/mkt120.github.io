@@ -6,7 +6,7 @@ draft: false
 date: 2025-06-10T07:00:00+09:00
 ---
 
-## 視聴元
+# 視聴元
 
 ::VideoFrame{ url="https://www.youtube.com/watch?v=AyF8r0DGqsc" }
 ::
