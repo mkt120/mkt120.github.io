@@ -6,28 +6,28 @@ draft: false
 date: 2025-06-16T07:00:00+09:00
 ---
 
-# 視聴元
+## 視聴元
 
 ::VideoFrame{ url="https://www.youtube.com/watch?v=udIqZERznkY" }
 ::
 
 Android アプリのなぜ？の効率化にしたい
 
-# デバッグ対象はさまざま
+## デバッグ対象はさまざま
 - UI
 - ロジック
 - API／DB
 - その他
 
-# Android Studioのデバッグ機能
+## Android Studioのデバッグ機能
 
-## Logcat
+### Logcat
 - ログ閲覧機能。
 - ６つのログレベルがある。（VERBOSE～ASSERT）
 - 出力フォーマットは以下。
     - [DATE] [PID] [TID] [package] [loglebel] [tag] [message]　
 
-## Breakpoint
+### Breakpoint
 - 変数などの状態を確認できる
 - アプリへのアタッチで確認できる
 - debuggable true の設定が必要
@@ -37,7 +37,7 @@ Android アプリのなぜ？の効率化にしたい
     - 変数が操作されるときに止まる
     - タイミング（初期化／参照／編集）を指定できる
 
-## Layout Inspector
+### Layout Inspector
 - スクショを取得してレイアウト状態を検証できる
 - Viewの階層情報＋スクショ（レイアウト境界付き）＋対象のパラメータ
 - 特にAndroidStudio 4.0 から Live Layout Inspector に
@@ -45,7 +45,7 @@ Android アプリのなぜ？の効率化にしたい
 - 3DView 
     - 階層を3D化したもので前後関係が視覚化しやすくなった
 
-## AndroidProfiler
+### AndroidProfiler
 - CPU／メモリ／ネットワーク／バッテリーの使用状況を把握できる
 - キー入力
 - CPUProfiler
@@ -59,7 +59,7 @@ Android アプリのなぜ？の効率化にしたい
     - CPU／Wifi／GPU／センサーなどでのエネルギー消費を表示する
     - システムイベントを発見できる
 
-## その他周辺ツールやライブラリ
+### その他周辺ツールやライブラリ
 - Timber
 - Stetho
 - Flipper
@@ -70,14 +70,14 @@ Android アプリのなぜ？の効率化にしたい
     - 実機上でレイアウト状態を確認できる
     - クラッシュログを確認できる
 
-# デバッグ手法の提案
+## デバッグ手法の提案
 こうやるといい感じにデバッグできるよ
 
-## アプリからログを取得
+### アプリからログを取得
 - Logcat（Timber）／BreakPoint
 - Timberではログの際の挙動を変えられる
 
-## API通信の検証
+### API通信の検証
 - NetworkProfiler
     - 特に、リクエストをクリックするとその詳細を確認できる
 - Stetho／Flipper
@@ -85,15 +85,15 @@ Android アプリのなぜ？の効率化にしたい
 - NetworkInspector
     - 起動中に発生した通信を確認できる（前項と同じことができる
 
-## データベースの内容を検証する
+### データベースの内容を検証する
 - Stetho／Flippter
 
-## 画面レイアウト
+### 画面レイアウト
 - LayoutInspector
 - Stetho／Flitter
 - Hyperion-Android
 
-## 便利なBreakPointの使い方
+### 便利なBreakPointの使い方
 - Exception
     - Exceptionの発生時に止める（なんでも／指定）
 - Condition

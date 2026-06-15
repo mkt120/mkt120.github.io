@@ -6,29 +6,29 @@ draft: false
 date: 2025-06-16T07:00:00+09:00
 ---
 
-# 視聴元
+## 視聴元
 
 ::VideoFrame{ url="https://www.youtube.com/watch?v=sRV_bSdyDjw" }
 ::
 
 
-# Flutterとは
+## Flutterとは
 - OS推奨デザインに合わせた奇麗なアプリを素早く作るためのクロスプラットフォームSDK
 - Google製。Dart。
 - WidgetTreeでUIを構築。
 - マテリアルデザインに出てくるパターンはほぼサポートされている。
 - Widgetを知り、使いこなすことが高速に開発するためにとても重要。
 
-## ゴール
+### ゴール
 Flutter知らなかった人「何か作ってみたいな」
 Flutter知ってた人「業務で使えるかも」
 
-## 補足：Dart言語について
+### 補足：Dart言語について
 - language-tourやった方が良い
 - セットアップ
 - 公式ドキュメント見て
 
-# Widgetとは
+## Widgetとは
 
 - 要素はすべてWidget
     - たとえばアイコン自身
@@ -40,12 +40,12 @@ Flutter知ってた人「業務で使えるかも」
     - 例：ローディング画面とそれによる表示の切り替え
 - チュートリアルを見るとstateの考え方が分かる
 
-##  WidgetTree
+###  WidgetTree
 - Widgetを入れ子にしてレイアウトを組み立てていく
 - IntelliJのFlutterPluginがサポートしてくれている。
 - 使い方が分からないWidgetはプロパティを見て理解する。
 
-# データの扱い
+## データの扱い
 - ネットワークから取得
     - Firebaseとの連携は手厚いサポートがある
     - http通信はDartのライブラリを使う
@@ -59,7 +59,7 @@ Flutter知ってた人「業務で使えるかも」
 - データベース
     - sqlite。Insert/Delete/UpdateなどのHelper有り。
 
-# 一問一答
+## 一問一答
 - CI回せる？：YES。ただしバージョンに一癖あり。
 - Analyticsある？：YES。
 - Firebaseをつかう。
@@ -77,5 +77,5 @@ Flutter知ってた人「業務で使えるかも」
 - ライブラリを探す方法は？
     - 公式プラグイン or dart library から検索する。
 
-# ゴールに対する答え：業務で使えそう？
+## ゴールに対する答え：業務で使えそう？
 「使えそうだけど、やってみないとわからない。結局覚悟次第。」
