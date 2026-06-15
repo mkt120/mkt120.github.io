@@ -17,7 +17,7 @@ useHead({
 <template>
 
     <div v-if="post">
-    <h1>{{ post.title }}</h1>
+    <h2>{{ post.title }}</h2>
     <ContentRenderer :value="post" />
     <div class="last_update">
       <p>最終更新: {{ convertDate(post.date) }}</p>
