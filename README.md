@@ -1,75 +1,63 @@
-# Nuxt Content Starter
+# mkt120.github.io
 
-Look at the [Nuxt Content documentation](https://content.nuxt.com) to learn more.
+このリポジトリは、Nuxt 3 と Nuxt Content を使って構築した個人サイトです。
+技術メモ、備忘録、開発ノートなどを Markdown で管理し、静的サイトとして公開する構成です。
 
-## Setup
+## 概要
 
-Make sure to install dependencies:
+- Nuxt 3 ベースのサイト構築
+- Markdown 記事を内容管理に使用
+- GitHub Pages へ公開しやすい構成
+- 日本語記事向けのレイアウトとメタ情報を含む
+
+## 主なディレクトリ
+
+- app/ : ページ、レイアウト、コンポーネント
+- content/ : 記事コンテンツ
+- public/ : 静的アセット
+- server/ : サーバー関連コード
+
+## 開発環境のセットアップ
+
+依存関係をインストールします。
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## 開発サーバーの起動
 
-Start the development server on `http://localhost:3000`:
+ローカル開発サーバーを起動します。
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+ブラウザで http://localhost:3000 を開いて確認できます。
 
-Build the application for production:
+## ビルド
+
+本番用にビルドします。
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+静的生成を行う場合は次のコマンドも利用できます。
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+npm run generate
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## プレビュー
+
+ビルド結果をローカルで確認します。
+
+```bash
+npm run preview
+```
+
+## 参考
+
+- Nuxt: https://nuxt.com/
+- Nuxt Content: https://content.nuxt.com/
