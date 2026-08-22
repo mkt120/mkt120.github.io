@@ -6,12 +6,12 @@ draft: false
 date: 2026-06-11T07:00:00+09:00
 ---
 
-# Kotlin Coroutine
+## Kotlin Coroutine
 
 `Kotlin Coroutine`は非同期処理などのコールバック地獄を解消してくれたり、
 可読性の高いコードを実装できるようになる便利な機能です。
 
-# TL;DR（結論）
+## TL;DR（結論）
 
 `ViewModel`では`viewModelScope.launch`を、
 `View`では`lifecycleScope.launch`を使うのが良さそう。
@@ -24,7 +24,7 @@ Google開発者サイトでコルーチンに関するベストプラクティ�
 3. `GlobalScope`は使わない
 4. コルーチンをキャンセルできるようにする
 
-## Dispatcherを外から注入できるようにする
+### Dispatcherを外から注入できるようにする
 
 `withContext`などで引数に設定するDispatcher（どのスレッドで処理するかの指定）は、
 ハードコードせず外から注入できる形にする。テストコードを実装するときにテストが容易に実装可能。
@@ -49,7 +49,7 @@ class SampleRepository() {
 
 ```
 
-## ViewModelでコルーチンを作成する
+### ViewModelでコルーチンを作成する
 
 `ViewModel`を作成し、コルーチンを作成→非同期処理を実装するのが良い。
 
@@ -73,7 +73,7 @@ class SampleViewModel(): ViewModel() {
 
 ```
 
-## GlobalScopeを使わない
+### GlobalScopeを使わない
 
 `GlobalScope`をハードコードしていることにより`Dispatcher`もハードコードされやすくなる点などから、
 `GlobalScope`を利用しないことが推奨されている。
@@ -90,7 +90,7 @@ class SampleRepository() {
 
 ```
 
-## コルーチンをキャンセル可能にする
+### コルーチンをキャンセル可能にする
 
 コルーチンの呼び出しはキャンセル可能。
 ただし、実際コルーチン内でキャンセルされたかの確認とそれに伴い処理を終了させることは自前で実装が必要。
@@ -114,7 +114,7 @@ class SampleViewModel(): ViewModel() {
 
 ```
 
-# Kotlin Coroutineを並行に実行する
+## Kotlin Coroutineを並行に実行する
 
 Kotlin Coroutineは非同期処理を簡潔に記述できるだけでなく、
 複数の処理を同時に実行する並行処理にも対応しています。
@@ -122,11 +122,11 @@ API通信やデータベースへのデータ永続化といった時間のか�
 全体の処理時間を短縮することが可能です。
 
 
-## 実装方法
+### 実装方法
 
 並行処理を実装する場合、主に以下の2つのパターンがあります。
 
-### 1. async / awaitAll による実装
+#### 1. async / awaitAll による実装
 
 1つ目は、`async` と `awaitAll` を使用して実装する方法です。
 
@@ -144,7 +144,7 @@ viewModelScope.launch {
 
 ```
 
-### 2. launch / joinAll による実装
+#### 2. launch / joinAll による実装
 
 2つ目は、`launch` と `joinAll` を使用して実装する方法です。
 
@@ -162,7 +162,7 @@ viewModelScope.launch {
 
 ```
 
-## 参考
+### 参考
 
 * [Android での Kotlin コルーチン  |  Android Developers](https://developer.android.com/kotlin/coroutines?hl=ja)
 * [Android でのコルーチンに関するベスト プラクティス  |  Kotlin  |  Android Developers](https://developer.android.com/kotlin/coroutines/coroutines-best-practices?hl=ja)
