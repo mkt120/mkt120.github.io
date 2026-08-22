@@ -7,10 +7,8 @@
                 <p>創りたいものを創りたいように作っています。</p>
                 <ul class="sns-container">
                     <li class="sns-list-item"><a href="https://github.com/mkt120">GitHub</a></li>
-                    <li class="sns-list-item"><a href="https://x.com/mkt120"><s>Twitter</s>X</a></li>
                     <li class="sns-list-item"><a href="https://zenn.dev/mkt120">Zenn</a></li>
                     <li class="sns-list-item"><a href="https://qiita.com/mkt120">Qiita</a></li>
-                    <li class="sns-list-item"><a href="https://atcoder.jp/users/mkt120">AtCoder</a></li>
                 </ul>
             </div>
         </div>
