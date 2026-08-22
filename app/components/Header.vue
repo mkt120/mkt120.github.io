@@ -10,7 +10,7 @@
             <NuxtLink to="/">TOP</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/other/archieve">Archieve</NuxtLink>
+            <NuxtLink to="/common/archieve">Archieve</NuxtLink>
           </li>
         </ul>
       </div>
